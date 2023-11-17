@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Concession </title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="container">
+
+            <h1> Onspot Concession </h1>
+            <br>
+            <br>
+            <select class="cases" id="Cases">
+                <option value="apple"> </option>
+
+                <option value="apple">outage </option>
+                <option value="banana">data down</option>
+                <option value="orange">data and voice down </option>
+                <option value="grape">wrong card and port </option>
+                <option value="grape"> physical instability </option>
+                <option value="grape"> blq</option>
+                <option value="grape"> slowness </option>
+            </select>
+            <br>
+            <div>
+                <br>
+                <br>
+                <div class="duration hidden" id="duration">
+
+                    <input type="radio" id="check">
+                    <label for="" class="check"> check the duration </label>
+                    <br>
+                    <br>
+
+                    <div class="row hidden" id="row">
+                        <div class="col-md-6">
+                            <div class=" less">
+                                <input type="radio" id="less">
+                                <label for=""> IF less than 12 hour </label>
+                                <h6 class="hidden1" id="lessThan"> 12 H = 3 G</h3>
+                                    <h3 class="hidden1" id="lessThan2">3221225472 </h3>
+                                    <button class="hidden1" onclick="copy()" id="copy">Copy</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="more">
+                                <input type="radio" id="more">
+
+                                <label for=""> IF More than 12 hour </label>
+                                <br>
+                                <br>
+                                <div class="row hidden1 " id="moreThan">
+                                    <div class="col-md-6">
+                                        <select name="" id="super" class="super">
+                                            <option value="1"> Select Package </option>
+
+                                            <option value="1"> super speed 30 G = 1G Per day </option>
+                                            <option value="3"> super speed 100 G = 3G Per day </option>
+                                            <option value="5"> super speed 140 G = 5G Per day </option>
+                                            <option value="7"> super speed 200 G = 7G Per day </option>
+                                            <option value="8"> super speed 250 G = 8G Per day </option>
+                                            <option value="13"> super speed 400 G = 13G Per day </option>
+                                            <option value="20"> super speed 600 G = 20G Per day </option>
+                                            <option value="5"> Mega speed 140 = 5G Per day </option>
+                                            <option value="8"> Mega speed 250 =8G Per day </option>
+                                            <option value="5"> ultra speed 140= 5G Per day </option>
+                                            <option value="8"> ultra speed 250 = 8G Per day</option>
+                                            <option value="20"> ultra speed 600 = 20G Per day</option>
+                                            <option value="1"> super telephonet 20g = 1G Per day</option>
+                                            <option value="1"> super telephonet 30g = 1G Per day </option>
+                                            <option value="5"> super telephonet 145 140 G = 5G Per day </option>
+                                            <option value="8"> super telephonet 230 250 G = 8G Per day </option>
+                                            <option value="5"> we max sv = 50G per day </option>
+
+
+                                        </select>
+                                        <br>
+                                        <br>
+
+                                        <div class="col-md-6">
+                                            <input type="text" name="" id="gbytes" class=" gbytes"
+                                                placeholder=" Enter number of G byte">
+                                            <br>
+                                            <br>
+                                            <input type="text" name="" id="days" class=" days"
+                                                placeholder=" Enter number of Dayes">
+                                            <br>
+                                            <br>
+                                            <button id="btn" class="btn-info">RESULT</button>
+                                            <br>
+                                            <br>
+
+                                            <p class="notice" id="notice">
+                                                
+
+                                            </p>
+                                            <a  href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1" id="ir" class="hidden1"  target="_blank" >IR  </a>
+                                            <input type="number" value="0" id="result">
+                                            
+                                            <button class="hidden1" onclick="copy()" id="copy2">Copy</button>
+                                         
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+
+        </div>
+
+    </div>
+
+    <div>
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/brain.js"></script>
+</body>
+
+</html>

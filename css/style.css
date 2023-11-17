@@ -1,0 +1,126 @@
+ * {
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+     font-family: cursive;
+     transition: all 1s ease-in-out;
+
+ }
+
+ .container-fluid {
+
+    position: fixed;
+     padding: 5%;
+     background-color: #DDD;
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .container {
+    border-radius: 10px;
+     position: fixed;
+     background-color: #fff;
+     width: 100%;
+     height: 100vh;
+     text-align: center;
+     top: 24px;
+     left: 115px;
+     padding: 1%;
+     /* overflow: scroll; */
+     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+
+ }
+
+ .super {
+     width: 400px;
+     text-align: center;
+ }
+
+ .cases {
+     text-align: center;
+     text-transform: capitalize;
+     font-family: cursive;
+ }
+
+ .check {
+
+     font-size: large;
+     font-weight: bold;
+
+ }
+
+ .days,
+ .gbytes {
+     position: absolute;
+     text-align: center;
+     left: 100px;
+ }
+
+ #btn {
+     padding: 3px;
+     position: absolute;
+     text-align: center;
+     left: 100px;
+     width: 235px;
+ }
+ #result {
+    padding: 3px;
+    position: absolute;
+    text-align: center;
+    left: 100px;
+    width: 235px;
+}
+.hidden{
+    display:none;
+}
+.hidden1{
+    opacity: 0;
+}
+#lessThan{
+    transition: all 1s ease-in-out;
+}
+#copy{
+    outline: none !important;
+    border: none !important;
+  padding: 1px;
+  transition: none;
+    /* background-color: #333 !important; */
+}
+#copy2{
+    position: absolute;
+    bottom: -73px;
+    left: 191px;
+    outline: none !important;
+    border: none !important;
+  padding: 1px;
+  transition: none;
+    /* background-color: #333 !important; */
+}
+.notice{
+    position: absolute;
+    left: -347px;
+    top: 90px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#ir{
+    position: absolute;
+    left: -347px;
+    top: 120px;
+    font-weight: bold;
+}
+
+.changeme{
+    transition:all 1s ease-in-out ;
+    background-color: #DDD;
+}
+@media all and (max-width:600px){
+    .super{
+        margin: 50px auto;
+    }
+    .container{
+        top: 24px;
+        left: 17px;
+    }
+}
