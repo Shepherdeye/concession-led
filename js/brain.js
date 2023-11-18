@@ -1,4 +1,4 @@
-﻿let day = document.getElementById("days"),
+let day = document.getElementById("days"),
   gbyte = document.getElementById("gbytes"),
   Cases = document.getElementById("Cases"),
   check = document.getElementById("check"),
@@ -24,7 +24,7 @@ btn.onclick = function () {
   console.log(result);
 
 
-  if (result.value <= 5368709120) {
+  if (result.value <= 5368709120 &&result.value != 0 ) {
     result.style.color = "green";
     document.getElementById("notice").textContent = " OK add  it by your self";
     document.getElementById("notice").style.color = "green";
@@ -36,10 +36,16 @@ btn.onclick = function () {
     document.getElementById("notice").textContent = "should  created  by  teamleader";
     document.getElementById("notice").style.color = "red";
     document.getElementById("ir").classList.remove("hidden1");
-  } else {
+  } else if ( result.value > 21474836480) {
     document.getElementById("notice").textContent = " You will make a normal Concession ";
     document.getElementById("notice").style.color = "orange";
     document.getElementById("result").style.color = "orange";
+
+    document.getElementById("ir").classList.add("hidden1");
+  } else {
+    document.getElementById("notice").textContent = " You should Enter a value ";
+    document.getElementById("notice").style.color = "gray";
+    document.getElementById("result").style.color = "gray";
 
     document.getElementById("ir").classList.add("hidden1");
   }
