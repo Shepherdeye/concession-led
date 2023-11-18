@@ -37,7 +37,7 @@ btn.onclick = function () {
     document.getElementById("notice").style.color = "red";
     document.getElementById("ir").classList.remove("hidden1");
   } else if ( result.value > 21474836480) {
-    document.getElementById("notice").textContent = " You will make a normal Concession ";
+    document.getElementById("notice").textContent = " You will make a normal Concession Not Onspot ";
     document.getElementById("notice").style.color = "orange";
     document.getElementById("result").style.color = "orange";
 
